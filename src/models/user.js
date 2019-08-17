@@ -4,7 +4,7 @@ const bcript = require('bcryptjs')
 const jwt = require('jsonwebtoken')
 const Task = require('./task')
 
-const secret = 'a1!2g@n'
+const secret = process.env.JWT_SECRET
 
 const userSchema = new mongoose.Schema({
     name: {
